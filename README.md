@@ -1,6 +1,6 @@
 # JSP 모델2 블로그 프로젝트
 
-
+&nbsp;
 
 ## 설명
 
@@ -13,19 +13,19 @@
 - 댓글쓰기, 댓글삭제 기능
 - 유튜브 영상 주소가 있을 경우 미리보기
 
-
+&nbsp;
 
 ## 프레젠테이션
 
 https://docs.google.com/presentation/d/1j9tevdhEa7kLbuQcUK7VuqT_IWw2XdMu13PX79RPZDk/edit?usp=sharing
 
-
+&nbsp;
 
 ## 영상
 
 https://youtu.be/AsomJ8yroHE
 
-
+&nbsp;
 
 ## Oracle DB 설정
 
