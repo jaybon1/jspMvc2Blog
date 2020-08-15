@@ -5,7 +5,7 @@
 ## 설명
 
 - JSP / Oracle DB를 사용한 블로그 입니다.
-- 도로명주소, SummerNote API를 사용하였습니다.
+- 도로명주소, SummerNote, Jsoup API를 사용하였습니다.
 - 로그인 및 회원가입
 - 게시글 페이징 기능
 - 프로필 사진 업로드 기능
