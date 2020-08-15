@@ -264,7 +264,7 @@ public class BoardRepository {
 	// 회원정보 3건찾기
 	public List<Board> findThree(int page) {
 		StringBuilder sb = new StringBuilder();
-		sb.append("SELECT /*+ INDEX_DESC(BOARD SYS_C008628)*/id, userId, title, content, readCount, createDate ");
+		sb.append("SELECT /*+ INDEX_DESC(BOARD SYS_C0028979)*/id, userId, title, content, readCount, createDate ");
 		sb.append("FROM board ");
 		sb.append("OFFSET ? ROWS FETCH NEXT 3 ROWS ONLY");
 		

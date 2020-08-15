@@ -39,7 +39,7 @@
 
 	<c:choose>
 		<c:when test="${empty param.keyword}">
-			<c:set var="pageNext" value="/blog/board?cmd=home&page=${param.page + 1}" /> 
+			<c:set var="pageNext" value="/blog/board?cmd=home&page=${param.page + 1}" />
 		</c:when>
 		<c:otherwise>
 			<c:set var="pageNext" value="/blog/board?cmd=search&page=${param.page + 1}&keyword=${param.keyword}" />
@@ -53,8 +53,20 @@
 
 		<c:choose>
 			<c:when test="${lastPage == param.page}">
-				<li class="page-item"><a class="page-link" href="${pageScope.pagePrevious}">Previous</a></li>
-				<li class="page-item disabled"><a class="page-link" href="${pageScope.pageNext}">Next</a></li>
+				<c:choose>
+
+					<c:when test="${param.page == 0}">
+						<li class="page-item disabled"><a class="page-link" href="${pageScope.pagePrevious}">Previous</a></li>
+						<li class="page-item disabled"><a class="page-link" href="${pageScope.pageNext}">Next</a></li>
+					</c:when>
+
+					<c:otherwise>
+						<li class="page-item"><a class="page-link" href="${pageScope.pagePrevious}">Previous</a></li>
+						<li class="page-item disabled"><a class="page-link" href="${pageScope.pageNext}">Next</a></li>
+					</c:otherwise>
+					
+				</c:choose>
+				
 			</c:when>
 
 			<c:when test="${param.page == 0}">
