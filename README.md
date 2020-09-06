@@ -35,7 +35,7 @@ https://youtu.be/AsomJ8yroHE
 
 ```sql
 alter session set "_oracle_script"=true; -- 12c버전 이후는 이 코드를 쓰지않으면 유저명에 @를 써야함
-CREATE USER cos IDENTIFIED BY bitc5600; -- 유저명과 비밀번호를 입력하여 사용자릉 생성한다
+CREATE USER cos IDENTIFIED BY bitc5600; -- 유저명과 비밀번호를 입력하여 사용자 생성한다
 
 GRANT CREATE SESSION TO cos; -- 세션을 만들 권한
 GRANT CREATE TABLESPACE TO cos; -- 테이블 스페이스를 만들 권한
